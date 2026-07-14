@@ -6,11 +6,11 @@
 <title>Giulia Speltoni — Procurement & Marketing Consultant</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;[...]" rel="stylesheet">
 <style>
   :root{
-    --plum: #3B1F35;
-    --plum-deep: #26141F;
+    --burgundy: #5C2E3A;
+    --burgundy-deep: #3D1F2A;
     --paper: #FBF3EF;
     --paper-alt: #F4E2E0;
     --rose: #C97C90;
@@ -20,7 +20,7 @@
     --ink: #3A2430;
     --muted: #7C5C6C;
     --line: #E6CDD1;
-    --line-plum: rgba(251,243,239,0.22);
+    --line-burgundy: rgba(251,243,239,0.22);
 
     --display: 'Fraunces', serif;
     --body: 'IBM Plex Sans', sans-serif;
@@ -50,9 +50,9 @@
   /* NAV */
   header.nav{
     position:sticky; top:0; z-index:50;
-    background:rgba(59,31,53,0.94);
+    background:rgba(92,46,58,0.94);
     backdrop-filter: blur(8px);
-    border-bottom:1px solid var(--line-plum);
+    border-bottom:1px solid var(--line-burgundy);
   }
   .nav-inner{
     max-width:1080px; margin:0 auto; padding:16px 32px;
@@ -72,7 +72,7 @@
   nav.links a:hover{ opacity:1; color:var(--rose-light); }
   .nav-right{ display:flex; align-items:center; gap:18px; }
   .lang-toggle{
-    display:flex; font-family:var(--mono); font-size:0.78rem; border:1px solid var(--line-plum);
+    display:flex; font-family:var(--mono); font-size:0.78rem; border:1px solid var(--line-burgundy);
     border-radius:2px; overflow:hidden;
   }
   .lang-toggle button{
@@ -83,7 +83,7 @@
   .lang-toggle button:hover{ opacity:1; }
   .cta-btn{
     font-family:var(--mono); font-size:0.8rem; letter-spacing:0.02em;
-    background:var(--champagne); color:var(--plum-deep); text-decoration:none;
+    background:var(--champagne); color:var(--burgundy-deep); text-decoration:none;
     padding:9px 18px; border-radius:2px; font-weight:500;
     transition:background 0.2s ease, transform 0.15s ease;
     white-space:nowrap;
@@ -92,7 +92,7 @@
 
   /* HERO */
   .hero{
-    background: linear-gradient(180deg, var(--plum) 0%, var(--plum-deep) 100%);
+    background: linear-gradient(180deg, var(--burgundy) 0%, var(--burgundy-deep) 100%);
     color:var(--paper);
     padding:96px 0 0 0;
     position:relative;
@@ -119,13 +119,13 @@
   /* manifest strip */
   .manifest{
     display:grid; grid-template-columns:repeat(4, 1fr);
-    border-top:1px solid var(--line-plum);
-    border-bottom:1px solid var(--line-plum);
+    border-top:1px solid var(--line-burgundy);
+    border-bottom:1px solid var(--line-burgundy);
     opacity:0; animation: rise 0.8s ease forwards; animation-delay:0.4s;
   }
   .manifest-field{
     padding:18px 20px 18px 0;
-    border-left:1px solid var(--line-plum);
+    border-left:1px solid var(--line-burgundy);
   }
   .manifest-field:first-child{ border-left:none; padding-left:0; }
   .manifest-field .k{
@@ -148,7 +148,7 @@
   }
   h2.section-title{
     font-family:var(--display); font-weight:500; font-size:clamp(1.7rem, 3vw, 2.3rem);
-    margin:0 0 20px; color:var(--plum); max-width:20ch;
+    margin:0 0 20px; color:var(--burgundy); max-width:20ch;
   }
 
   /* ABOUT */
@@ -158,10 +158,10 @@
   }
   .monogram{
     width:150px; height:150px; border-radius:50%;
-    background: radial-gradient(circle at 32% 28%, var(--rose-light), var(--rose) 60%, var(--plum) 100%);
+    background: radial-gradient(circle at 32% 28%, var(--rose-light), var(--rose) 60%, var(--burgundy) 100%);
     display:flex; align-items:center; justify-content:center;
     font-family:var(--display); font-weight:500; font-size:2.6rem; color:var(--paper);
-    box-shadow: 0 12px 30px rgba(59,31,53,0.2);
+    box-shadow: 0 12px 30px rgba(92,46,58,0.2);
   }
   .about-text p{
     font-size:1.04rem; line-height:1.75; color:var(--ink); max-width:60ch; margin:0 0 18px;
@@ -179,13 +179,13 @@
     padding:32px 26px; position:relative;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
   }
-  .service-card:hover{ transform:translateY(-4px); box-shadow:0 16px 28px rgba(59,31,53,0.1); }
+  .service-card:hover{ transform:translateY(-4px); box-shadow:0 16px 28px rgba(92,46,58,0.1); }
   .service-tag{
     font-family:var(--mono); font-size:0.72rem; color:var(--champagne); letter-spacing:0.06em;
     display:block; margin-bottom:14px;
   }
   .service-card h3{
-    font-family:var(--display); font-weight:500; font-size:1.28rem; color:var(--plum);
+    font-family:var(--display); font-weight:500; font-size:1.28rem; color:var(--burgundy);
     margin:0 0 12px;
   }
   .service-card p{ font-size:0.95rem; line-height:1.6; color:var(--muted); margin:0; }
@@ -208,7 +208,7 @@
     font-family:var(--mono); font-size:0.76rem; color:var(--rose); letter-spacing:0.03em;
     margin:0 0 4px;
   }
-  .tl-role{ font-family:var(--display); font-weight:500; font-size:1.15rem; color:var(--plum); margin:0 0 3px; }
+  .tl-role{ font-family:var(--display); font-weight:500; font-size:1.15rem; color:var(--burgundy); margin:0 0 3px; }
   .tl-place{ font-size:0.9rem; color:var(--muted); margin:0 0 8px; }
   .tl-desc{ font-size:0.92rem; line-height:1.6; color:var(--ink); margin:0; max-width:56ch; }
 
@@ -221,7 +221,7 @@
   }
   .chip-list{ display:flex; flex-wrap:wrap; gap:8px; }
   .chip{
-    font-family:var(--mono); font-size:0.8rem; color:var(--plum);
+    font-family:var(--mono); font-size:0.8rem; color:var(--burgundy);
     background:var(--paper); border:1px solid var(--line);
     padding:6px 12px; border-radius:2px;
   }
@@ -231,7 +231,7 @@
 
   /* CONTACT */
   .contact{
-    background: linear-gradient(180deg, var(--plum-deep) 0%, var(--plum) 100%);
+    background: linear-gradient(180deg, var(--burgundy-deep) 0%, var(--burgundy) 100%);
     color:var(--paper); text-align:center;
   }
   .contact .section-label{ color:var(--rose-light); justify-content:center; }
@@ -244,19 +244,19 @@
   .contact p.sub{ color:#E4CDD3; max-width:44ch; margin:0 auto 36px; line-height:1.6; }
   .contact-links{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-bottom:52px; }
   .contact-links a.primary{
-    font-family:var(--mono); font-size:0.9rem; background:var(--champagne); color:var(--plum-deep);
+    font-family:var(--mono); font-size:0.9rem; background:var(--champagne); color:var(--burgundy-deep);
     text-decoration:none; padding:13px 28px; border-radius:2px; font-weight:500;
     transition:background 0.2s ease, transform 0.15s ease;
   }
   .contact-links a.primary:hover{ background:var(--champagne-soft); transform:translateY(-1px); }
   .contact-links a.secondary{
     font-family:var(--mono); font-size:0.9rem; color:var(--paper);
-    text-decoration:none; padding:13px 22px; border:1px solid var(--line-plum); border-radius:2px;
+    text-decoration:none; padding:13px 22px; border:1px solid var(--line-burgundy); border-radius:2px;
     transition:border-color 0.2s ease, background 0.2s ease;
   }
   .contact-links a.secondary:hover{ border-color:var(--rose-light); background:rgba(255,255,255,0.04); }
   footer{
-    border-top:1px solid var(--line-plum); padding:24px 32px;
+    border-top:1px solid var(--line-burgundy); padding:24px 32px;
     font-family:var(--mono); font-size:0.76rem; color:#C7ABB4;
     display:flex; justify-content:space-between; max-width:1080px; margin:0 auto;
   }
@@ -332,8 +332,8 @@
     <div class="about-grid">
       <div class="monogram reveal">GS</div>
       <div class="about-text reveal">
-        <p data-i18n-html="about.p1">I've worked in <strong>procurement and supply chain</strong> for the past four years: first as a Purchasing Agent, then as Purchasing Manager for an Italian lighting company with a network of over 100 strategic suppliers across Europe and Asia. I've negotiated deals, cut costs without cutting quality, and learned to read a supply chain like a map.</p>
-        <p data-i18n-html="about.p2">Along the way I earned a <strong>Master's in Digital Communication</strong> in Milan, because I believe a well-built supply chain deserves to be told well, too. Today I work as a freelance consultant, in the space between procurement and marketing — two worlds that rarely talk to each other, and that I connect for my clients.</p>
+        <p data-i18n-html="about.p1">I've worked in <strong>procurement and supply chain</strong> for the past four years: first as a Purchasing Agent, then as Purchasing Manager for an Italian l[...]
+        <p data-i18n-html="about.p2">Along the way I earned a <strong>Master's in Digital Communication</strong> in Milan, because I believe a well-built supply chain deserves to be told well, to[...]
       </div>
     </div>
   </div>
@@ -476,8 +476,8 @@
       "manifest.lang.k": "Languages", "manifest.lang.v": "EN · IT · FR · ES",
       "manifest.avail.k": "Availability", "manifest.avail.v": "Taking new projects — 2026",
       "about.label": "Who I am",
-      "about.p1": "I've worked in <strong>procurement and supply chain</strong> for the past four years: first as a Purchasing Agent, then as Purchasing Manager for an Italian lighting company with a network of over 100 strategic suppliers across Europe and Asia. I've negotiated deals, cut costs without cutting quality, and learned to read a supply chain like a map.",
-      "about.p2": "Along the way I earned a <strong>Master's in Digital Communication</strong> in Milan, because I believe a well-built supply chain deserves to be told well, too. Today I work as a freelance consultant, in the space between procurement and marketing — two worlds that rarely talk to each other, and that I connect for my clients.",
+      "about.p1": "I've worked in <strong>procurement and supply chain</strong> for the past four years: first as a Purchasing Agent, then as Purchasing Manager for an Italian lighting company wi[...]
+      "about.p2": "Along the way I earned a <strong>Master's in Digital Communication</strong> in Milan, because I believe a well-built supply chain deserves to be told well, too. Today I work as[...]
       "servizi.label": "How I can help",
       "servizi.title": "Services built for companies that source globally and speak locally.",
       "servizi.card1.h": "Sourcing strategy",
@@ -532,8 +532,8 @@
       "manifest.lang.k": "Lingue", "manifest.lang.v": "IT · EN · FR · ES",
       "manifest.avail.k": "Disponibilità", "manifest.avail.v": "Nuovi progetti — 2026",
       "about.label": "Chi sono",
-      "about.p1": "Mi occupo di <strong>procurement e supply chain</strong> da quattro anni: prima come Purchasing Agent, poi come Purchasing Manager per un'azienda italiana di illuminazione con una rete di oltre 100 fornitori strategici tra Europa e Asia. Ho negoziato accordi, ridotto costi mantenendo la qualità, e imparato a leggere una filiera come una mappa.",
-      "about.p2": "Nel frattempo ho preso un <strong>Master in Digital Communication</strong> a Milano, perché credo che una filiera ben costruita meriti anche di essere raccontata bene. Oggi lavoro come consulente freelance, in quello spazio che sta tra gli acquisti e il marketing — due mondi che raramente si parlano, e che io metto in comunicazione per i miei clienti.",
+      "about.p1": "Mi occupo di <strong>procurement e supply chain</strong> da quattro anni: prima come Purchasing Agent, poi come Purchasing Manager per un'azienda italiana di illuminazione con [...]
+      "about.p2": "Nel frattempo ho preso un <strong>Master in Digital Communication</strong> a Milano, perché credo che una filiera ben costruita meriti anche di essere raccontata bene. Oggi la[...]
       "servizi.label": "Come posso aiutarti",
       "servizi.title": "Servizi pensati per chi acquista globalmente e comunica in locale.",
       "servizi.card1.h": "Strategia di approvvigionamento",
