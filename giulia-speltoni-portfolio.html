@@ -6,7 +6,7 @@
 <title>Giulia Speltoni — Procurement & Marketing Consultant</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;[...]" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
   :root{
     --burgundy: #5C2E3A;
@@ -332,8 +332,8 @@
     <div class="about-grid">
       <div class="monogram reveal">GS</div>
       <div class="about-text reveal">
-        <p data-i18n-html="about.p1">I've worked in <strong>procurement and supply chain</strong> for the past four years: first as a Purchasing Agent, then as Purchasing Manager for an Italian l[...]
-        <p data-i18n-html="about.p2">Along the way I earned a <strong>Master's in Digital Communication</strong> in Milan, because I believe a well-built supply chain deserves to be told well, to[...]
+        <p data-i18n-html="about.p1">I've worked in <strong>procurement and supply chain</strong> for the past four years: first as a Purchasing Agent, then as Purchasing Manager for an Italian lighting company with 150+ employees.</p>
+        <p data-i18n-html="about.p2">Along the way I earned a <strong>Master's in Digital Communication</strong> in Milan, because I believe a well-built supply chain deserves to be told well, too. Today I work as a freelancer, combining both skills.</p>
       </div>
     </div>
   </div>
@@ -476,8 +476,8 @@
       "manifest.lang.k": "Languages", "manifest.lang.v": "EN · IT · FR · ES",
       "manifest.avail.k": "Availability", "manifest.avail.v": "Taking new projects — 2026",
       "about.label": "Who I am",
-      "about.p1": "I've worked in <strong>procurement and supply chain</strong> for the past four years: first as a Purchasing Agent, then as Purchasing Manager for an Italian lighting company wi[...]
-      "about.p2": "Along the way I earned a <strong>Master's in Digital Communication</strong> in Milan, because I believe a well-built supply chain deserves to be told well, too. Today I work as[...]
+      "about.p1": "I've worked in <strong>procurement and supply chain</strong> for the past four years: first as a Purchasing Agent, then as Purchasing Manager for an Italian lighting company with 150+ employees.",
+      "about.p2": "Along the way I earned a <strong>Master's in Digital Communication</strong> in Milan, because I believe a well-built supply chain deserves to be told well, too. Today I work as a freelancer, combining both skills.",
       "servizi.label": "How I can help",
       "servizi.title": "Services built for companies that source globally and speak locally.",
       "servizi.card1.h": "Sourcing strategy",
@@ -532,8 +532,8 @@
       "manifest.lang.k": "Lingue", "manifest.lang.v": "IT · EN · FR · ES",
       "manifest.avail.k": "Disponibilità", "manifest.avail.v": "Nuovi progetti — 2026",
       "about.label": "Chi sono",
-      "about.p1": "Mi occupo di <strong>procurement e supply chain</strong> da quattro anni: prima come Purchasing Agent, poi come Purchasing Manager per un'azienda italiana di illuminazione con [...]
-      "about.p2": "Nel frattempo ho preso un <strong>Master in Digital Communication</strong> a Milano, perché credo che una filiera ben costruita meriti anche di essere raccontata bene. Oggi la[...]
+      "about.p1": "Mi occupo di <strong>procurement e supply chain</strong> da quattro anni: prima come Purchasing Agent, poi come Purchasing Manager per un'azienda italiana di illuminazione con 150+ dipendenti.",
+      "about.p2": "Nel frattempo ho preso un <strong>Master in Digital Communication</strong> a Milano, perché credo che una filiera ben costruita meriti anche di essere raccontata bene. Oggi lavoro come freelancer, combinando entrambe le competenze.",
       "servizi.label": "Come posso aiutarti",
       "servizi.title": "Servizi pensati per chi acquista globalmente e comunica in locale.",
       "servizi.card1.h": "Strategia di approvvigionamento",
@@ -591,10 +591,17 @@
     });
   }
 
+  // Initialize translations on page load
+  document.addEventListener('DOMContentLoaded', function(){
+    applyLang('en');
+  });
+
+  // Handle language toggle clicks
   document.querySelectorAll('.lang-toggle button').forEach(btn=>{
     btn.addEventListener('click', ()=> applyLang(btn.getAttribute('data-lang')));
   });
 
+  // Reveal on scroll
   const revealEls = document.querySelectorAll('.reveal');
   if('IntersectionObserver' in window){
     const io = new IntersectionObserver((entries)=>{
